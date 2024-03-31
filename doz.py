@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
         self.pushButton.setText("")
         self.pushButton.setObjectName("pushButton")
         self.pushButton.clicked.connect(self.input_text)
-        self.pushButton.clicked.connect(self.input_text_o)
+        self.pushButton.clicked.connect(self.input_button_o)
         self.pushButton.clicked.connect(self.button)
         self.pushButton.clicked.connect(self.button_o)
 
@@ -35,10 +35,11 @@ class Ui_MainWindow(object):
         self.pushButton_2.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_2.setText("")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_2.clicked.connect(self.input_text)
+        self.pushButton_2.clicked.connect(self.input_text_2)
+        self.pushButton_2.clicked.connect(self.input_button_o_2)
         self.pushButton_2.clicked.connect(self.button)
         self.pushButton_2.clicked.connect(self.button_o)
-        self.pushButton_2.clicked.connect(self.input_text_o)
+        
 
 
 
@@ -47,9 +48,10 @@ class Ui_MainWindow(object):
         self.pushButton_3.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_3.setText("")
         self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_3.clicked.connect(self.input_text)
+        self.pushButton_3.clicked.connect(self.input_text_3)
+        self.pushButton_3.clicked.connect(self.input_button_o_3)
         self.pushButton_3.clicked.connect(self.button)
-        self.pushButton_3.clicked.connect(self.input_text_o)
+        
         self.pushButton_3.clicked.connect(self.button_o)
 
 
@@ -58,9 +60,9 @@ class Ui_MainWindow(object):
         self.pushButton_4.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_4.setText("")
         self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_4.clicked.connect(self.input_text)
+        self.pushButton_4.clicked.connect(self.input_text_4)
         self.pushButton_4.clicked.connect(self.button)
-        self.pushButton_4.clicked.connect(self.input_text_o)
+        self.pushButton_4.clicked.connect(self.input_button_o_4)
         self.pushButton_4.clicked.connect(self.button_o)
 
 
@@ -69,9 +71,10 @@ class Ui_MainWindow(object):
         self.pushButton_5.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_5.setText("")
         self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_5.clicked.connect(self.input_text)
+        self.pushButton_5.clicked.connect(self.input_text_5)
+        self.pushButton_5.clicked.connect(self.input_button_o_5)
         self.pushButton_5.clicked.connect(self.button)
-        self.pushButton_5.clicked.connect(self.input_text_o)
+
         self.pushButton_5.clicked.connect(self.button_o)
 
 
@@ -80,9 +83,11 @@ class Ui_MainWindow(object):
         self.pushButton_6.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_6.setText("")
         self.pushButton_6.setObjectName("pushButton_6")
-        self.pushButton_6.clicked.connect(self.input_text)
+        self.pushButton_6.clicked.connect(self.input_text_6)
+        self.pushButton_6.clicked.connect(self.input_button_o_6)
+
         self.pushButton_6.clicked.connect(self.button)
-        self.pushButton_6.clicked.connect(self.input_text_o)
+        
         self.pushButton_6.clicked.connect(self.button_o)
 
 
@@ -91,9 +96,10 @@ class Ui_MainWindow(object):
         self.pushButton_7.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_7.setText("")
         self.pushButton_7.setObjectName("pushButton_7")
-        self.pushButton_7.clicked.connect(self.input_text)
+        self.pushButton_7.clicked.connect(self.input_text_7)
         self.pushButton_7.clicked.connect(self.button)
-        self.pushButton_7.clicked.connect(self.input_text_o)
+        self.pushButton_7.clicked.connect(self.input_button_o_7)
+        
         self.pushButton_7.clicked.connect(self.button_o)
 
 
@@ -102,9 +108,11 @@ class Ui_MainWindow(object):
         self.pushButton_8.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_8.setText("")
         self.pushButton_8.setObjectName("pushButton_8")
-        self.pushButton_8.clicked.connect(self.input_text)
+        self.pushButton_8.clicked.connect(self.input_text_8)
+        self.pushButton_8.clicked.connect(self.input_button_o_8)
+
         self.pushButton_8.clicked.connect(self.button)
-        self.pushButton_8.clicked.connect(self.input_text_o)
+
         self.pushButton_8.clicked.connect(self.button_o)
 
 
@@ -113,9 +121,10 @@ class Ui_MainWindow(object):
         self.pushButton_9.setStyleSheet("background-color: rgb(170, 0, 255);")
         self.pushButton_9.setText("")
         self.pushButton_9.setObjectName("pushButton_9")
-        self.pushButton_9.clicked.connect(self.input_text)
+        self.pushButton_9.clicked.connect(self.input_text_9)
+        self.pushButton_9.clicked.connect(self.input_button_o_9)
         self.pushButton_9.clicked.connect(self.button)
-        self.pushButton_9.clicked.connect(self.input_text_o)
+        
         self.pushButton_9.clicked.connect(self.button_o)
 
 
@@ -162,50 +171,125 @@ class Ui_MainWindow(object):
     
     def input_text(self):
         if self.text.text()=="x":
-            self.pushButton.clicked.connect(lambda:self.pushButton.setText("x"))
-            self.pushButton_2.clicked.connect(lambda:self.pushButton_2.setText("x"))
-            self.pushButton_3.clicked.connect(lambda:self.pushButton_3.setText("x"))
-            self.pushButton_4.clicked.connect(lambda:self.pushButton_4.setText("x"))
-            self.pushButton_5.clicked.connect(lambda:self.pushButton_5.setText("x"))
-            self.pushButton_6.clicked.connect(lambda:self.pushButton_6.setText("x"))
-            self.pushButton_7.clicked.connect(lambda:self.pushButton_7.setText("x"))
-            self.pushButton_8.clicked.connect(lambda:self.pushButton_8.setText("x"))
-            self.pushButton_9.clicked.connect(lambda:self.pushButton_9.setText("x"))
+            self.pushButton.setText("X")
 
-    def input_text_o(self):
+    def input_text_2(self):
+        if self.text.text()=="x":
+            self.pushButton_2.setText("X")
+
+    def input_text_3(self):
+        if self.text.text()=="x":
+            self.pushButton_3.setText("X")
+
+    def input_text_4(self):
+        if self.text.text()=="x":
+            self.pushButton_4.setText("X")
+
+    def input_text_5(self):
+        if self.text.text()=="x":
+            self.pushButton_5.setText("X")
+
+    def input_text_6(self):
+        if self.text.text()=="x":
+            self.pushButton_6.setText("X")
+
+    def input_text_7(self):
+        if self.text.text()=="x":
+            self.pushButton_7.setText("X")
+
+    def input_text_8(self):
+        if self.text.text()=="x":
+            self.pushButton_8.setText("X")
+
+
+    def input_text_9(self):
+        if self.text.text()=="x":
+            self.pushButton_9.setText("X")                
+
+    
+    def input_button_o(self):
         if self.text.text()=="o":
-            self.pushButton.clicked.connect(lambda:self.pushButton.setText("o"))
-            self.pushButton_2.clicked.connect(lambda:self.pushButton_2.setText("o"))
-            self.pushButton_3.clicked.connect(lambda:self.pushButton_3.setText("o"))
-            self.pushButton_4.clicked.connect(lambda:self.pushButton_4.setText("o"))
-            self.pushButton_5.clicked.connect(lambda:self.pushButton_5.setText("o"))
-            self.pushButton_6.clicked.connect(lambda:self.pushButton_6.setText("o"))
-            self.pushButton_7.clicked.connect(lambda:self.pushButton_7.setText("o"))
-            self.pushButton_8.clicked.connect(lambda:self.pushButton_8.setText("o"))
-            self.pushButton_9.clicked.connect(lambda:self.pushButton_9.setText("o"))
+            self.pushButton.setText("o")
+
+    def input_button_o_2(self):
+        if self.text.text()=="o":
+            self.pushButton_2.setText("o")
+
+    def input_button_o_3(self):
+        if self.text.text()=="o":
+            self.pushButton_3.setText("o")
+    
+
+    def input_button_o_4(self):
+        if self.text.text()=="o":
+            self.pushButton_4.setText("o")
+
+    
+    def input_button_o_5(self):
+        if self.text.text()=="o":
+            self.pushButton_5.setText("o")
+
+    
+    def input_button_o_6(self):
+        if self.text.text()=="o":
+            self.pushButton_6.setText("o")
+
+    
+    def input_button_o_7(self):
+        if self.text.text()=="o":
+            self.pushButton_7.setText("o")
+
+    
+    def input_button_o_8(self):
+        if self.text.text()=="o":
+            self.pushButton_8.setText("o")
+        
+    
+    def input_button_o_9(self):
+        if self.text.text()=="o":
+            self.pushButton_9.setText("o")
+
+
+
+
               
     def button(self):
-        if self.pushButton.text()=="x" and self.pushButton_5.text()=="x" and self.pushButton_7.text()=="x":
+        if self.pushButton.text()=="X" and self.pushButton_5.text()=="X" and self.pushButton_7.text()=="X":
             messgae=QMessageBox()
             messgae.setText("X is winer")
             messgae.exec()
 
-        elif self.pushButton.text() =="x" and self.pushButton_2.text()=="x" and self.pushButton_3.text()=="x":
+        elif self.pushButton.text() =="X" and self.pushButton_2.text()=="X" and self.pushButton_3.text()=="X":
             messgae=QMessageBox()
             messgae.setText("X is winer")
             messgae.exec()
 
-        elif self.pushButton_4.text() =="x" and self.pushButton_5.text()=="x" and self.pushButton_6.text()=="x":
+        elif self.pushButton_4.text() =="X" and self.pushButton_5.text()=="X" and self.pushButton_6.text()=="X":
             messgae=QMessageBox()
             messgae.setText("X is winer")
             messgae.exec()
 
-        elif self.pushButton_7.text() =="x" and self.pushButton_8.text()=="x" and self.pushButton_9.text()=="x":
+        elif self.pushButton_7.text() =="X" and self.pushButton_8.text()=="X" and self.pushButton_9.text()=="X":
             messgae=QMessageBox()
             messgae.setText("X is winer")
             messgae.exec()
 
-        elif self.pushButton_3.text() =="x" and self.pushButton_5.text()=="x" and self.pushButton_9.text()=="x":
+        elif self.pushButton_3.text() =="X" and self.pushButton_5.text()=="X" and self.pushButton_9.text()=="X":
+            messgae=QMessageBox()
+            messgae.setText("X is winer")
+            messgae.exec()
+
+        elif self.pushButton_2.text() =="X" and self.pushButton_5.text()=="X" and self.pushButton_8.text()=="X":
+            messgae=QMessageBox()
+            messgae.setText("X is winer")
+            messgae.exec()
+
+        elif self.pushButton_3.text() =="X" and self.pushButton_6.text()=="X" and self.pushButton_7.text()=="X":
+            messgae=QMessageBox()
+            messgae.setText("X is winer")
+            messgae.exec()
+
+        elif self.pushButton.text() =="X" and self.pushButton_4.text()=="X" and self.pushButton_9.text()=="X":
             messgae=QMessageBox()
             messgae.setText("X is winer")
             messgae.exec()
@@ -222,19 +306,35 @@ class Ui_MainWindow(object):
 
         elif self.pushButton_4.text() =="o" and self.pushButton_5.text()=="o" and self.pushButton_6.text()=="o":
             messgae=QMessageBox()
-            messgae.setText("X is winer")
+            messgae.setText("O is winer")
             messgae.exec()
 
         elif self.pushButton_7.text() =="o" and self.pushButton_8.text()=="o" and self.pushButton_9.text()=="o":
             messgae=QMessageBox()
-            messgae.setText("o is winer")
+            messgae.setText("O is winer")
             messgae.exec()
 
         elif self.pushButton_3.text() =="o" and self.pushButton_5.text()=="o" and self.pushButton_9.text()=="o":
             messgae=QMessageBox()
-            messgae.setText("o is winer")
+            messgae.setText("O is winer")
             messgae.exec()
             self.text.setText("")
+
+        elif self.pushButton_2.text() =="o" and self.pushButton_5.text()=="o" and self.pushButton_8.text()=="o":
+            messgae=QMessageBox()
+            messgae.setText("O is winer")
+            messgae.exec()
+
+        elif self.pushButton_3.text() =="o" and self.pushButton_6.text()=="o" and self.pushButton_7.text()=="o":
+            messgae=QMessageBox()
+            messgae.setText("O is winer")
+            messgae.exec()
+
+        elif self.pushButton.text() =="o" and self.pushButton_4.text()=="o" and self.pushButton_9.text()=="o":
+            messgae=QMessageBox()
+            messgae.setText("O is winer")
+            messgae.exec()
+
         
 
     def button_clean(self):
